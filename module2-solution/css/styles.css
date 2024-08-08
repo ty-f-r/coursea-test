@@ -22,11 +22,11 @@ main {
 
 /* Section Styles */
 .section {
+    height: 180px;
     border: 1px solid black;
     background-color: #4e4b4b; 
     color: #fff; 
-    padding: 20px;
-    padding-top: 45px;
+    padding: 45px 20px 20px 20px;
     position: relative;
     margin-bottom: 20px;
 }
@@ -45,20 +45,18 @@ main {
 }
 
 /* Desktop View */
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .section {
         width: 33.33%;
         float: left;
     }
 }
-
 /* Tablet View */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 992px) and (max-width: 1199px)  {
     .section {
         width: 100%;
     }
-    #beef,
-    #chicken {
+    #beef,#chicken {
         float: left;
         width: 50%;
     }
@@ -67,8 +65,9 @@ main {
     }
 }
 
+
 /* Mobile View */
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .section {
         width: 100%;
         float: none;
