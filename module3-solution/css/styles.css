@@ -1,0 +1,107 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+
+
+
+
+#menu-tile, #specials-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+  }
+  #menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+  }
+  
+  
+  #menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+  }
+
+/* Desktop View */
+@media (min-width: 1200px) {
+    .section {
+        margin-right: 15px; /* Space between sections */
+    }
+
+    .section:nth-child(3n) {
+        margin-right: 0; /* Remove margin on the last element in a row */
+    }
+}
+
+/* Tablet View */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 991px) {
+    .section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Default hidden menu and toggle button */
+.navbar-collapse {
+    display: none;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+/* Show collapse button and menu on small screens */
+@media (max-width: 767px) {
+    .navbar-collapse {
+        display: block;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+}
+
+/* Hide menu on larger screens */
+@media (min-width: 768px) {
+    .navbar-collapse {
+        display: none;
+    }
+    .navbar-toggle {
+        display: none;
+    }
+}
